@@ -1,0 +1,135 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #0d1117;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background: #161b22;
+    padding: 25px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.amount p,
+.from p,
+.to p {
+    font-size: 15px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.amount input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background: #21262d;
+    color: #fff;
+}
+
+.dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    gap: 15px;
+}
+
+.select-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #21262d;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #30363d;
+}
+
+.select-container img {
+    width: 40px;
+}
+
+select {
+    background: none;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.fa-arrow-right-arrow-left {
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+option {
+    background: #21262d;
+    color: #fff;
+}
+
+.msg {
+    background: #21262d;
+    padding: 12px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #30363d;
+    font-size: 15px;
+}
+
+button {
+    width: 100%;
+    background: #00c3ff;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #000;
+}
+
+button:hover {
+    background: #00a1d6;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .dropdown {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .fa-arrow-right-arrow-left {
+        transform: rotate(90deg);
+    }
+}
